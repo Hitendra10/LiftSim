@@ -12,13 +12,13 @@ const EleNum = (floorTopEdge) => {
 
   const min = Math.min(...eleArrayDist);
   const indx = eleArrayDist.indexOf(min);
-  let liftElement = document.getElementById(eleArray[indx]);
-  let liftHeight = liftElement.clientHeight;
-
+  const liftElement = document.getElementById(eleArray[indx]);
+  const liftHeight = liftElement.clientHeight;
+ 
   function Move() {
-    let liftSent = liftElement;
+    const liftSent = liftElement;
     (liftSent.style.transition =
-      "top " + Math.round(min / liftHeight) * 6 + "s") &&
+      "top " + Math.round(min / liftHeight)*3 + "s") &&
       (liftSent.style.top = -20 + floorTopEdge + "px");
   }
 
