@@ -1,5 +1,5 @@
 # Getting Started with Lift Simulation
-
+see the project live at https://liftsim.netlify.app/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

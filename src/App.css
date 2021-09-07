@@ -6,25 +6,46 @@
   background-color: aqua;
   margin: 0%;
   padding: 0%;
-  transition: top 1s ease-in 0.2s;
+  transition: top 1s ease-in-out 0s;
   animation-timing-function: linear;
 }
-.ele1 {
+.ele01 {
   left: 200px;
   background-color: aqua;
 }
-.ele2 {
+.ele02 {
   left: 300px;
   background-color: rgb(255, 136, 0);
 }
-.ele3 {
+.ele03 {
   left: 400px;
   background-color: rgb(25, 0, 255);
 }
-.ele4 {
+.ele04 {
   left: 500px;
   background-color: rgb(0, 255, 55);
 }
+.ele05 {
+  left: 600px;
+  background-color: rgb(251, 255, 0);
+}
+.ele06 {
+  left: 700px;
+  background-color: rgb(255, 0, 221);
+}
+.ele07 {
+  left: 800px;
+  background-color: rgb(255, 0, 0);
+}
+.ele08 {
+  left: 900px;
+  background-color: rgb(0, 0, 0);
+}
+.ele09 {
+  left: 1000px;
+  background-color: rgb(106, 0, 133);
+}
+
 .level {
   background-color: beige;
   height: 150px;

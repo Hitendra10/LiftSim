@@ -1,27 +1,22 @@
 import React from "react";
 import Floor from "./Floor";
-import GoToFloor from "../Function/GoToFloor";
-//import lastFloor from "../App"
+import goToFloor from "../Function/goToFloor";
 
-const Floors = ({ lastFloor }) => {
-  
+const Floors = ({ lastFloor, elevatorArray }) => {
   const array = [];
-
   for (let i = lastFloor - 1; i > 1; i--) {
     array.push(i);
   }
-  //console.log(array);
-  //console.log("last floor: " + lastFloor);
 
   return array.map((a) => {
-    return a <10 ? (
+    return a < 10 ? (
       <Floor
-        level={"0" + a}
+        level={`0${a}`}
         key={a}
         upBtn={true}
         downBtn={true}
         onClick={(e) => {
-          GoToFloor(e);
+          goToFloor(e, elevatorArray);
         }}
       />
     ) : (
@@ -31,7 +26,7 @@ const Floors = ({ lastFloor }) => {
         upBtn={true}
         downBtn={true}
         onClick={(e) => {
-          GoToFloor(e);
+          goToFloor(e, elevatorArray);
         }}
       />
     );
