@@ -1,6 +1,6 @@
 import React from "react";
 import Floor from "./Floor";
-import goToFloor from "../Function/goToFloor";
+import goToFloor from "../Function/GoToFloor";
 
 const Floors = ({ lastFloor, elevatorArray }) => {
   const array = [];
