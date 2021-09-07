@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import Floor from "../components/Floor";
 import Floors from "../components/Floors";
-import goToFloor from "../Function/goToFloor";
+import goToFloor from "../Function/GoToFloor";
 import Elevators from "./Elevators";
 
 function Building() {
