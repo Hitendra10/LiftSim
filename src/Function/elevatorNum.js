@@ -11,6 +11,7 @@ function ElevatorNum(floorTopEdge, elevatorArray) {
     if (!eleBusy.includes(e)) {
       return eleNotBusy.push(e);
     }
+    return null
   });
 
 if(eleNotBusy.length!==0){
